@@ -1,0 +1,20 @@
+.logo {
+  width: 120px;
+  
+  @include e(background) {
+    fill:#BA8058;
+  }
+  
+  @include e(text) {
+    opacity: 0;
+    fill:#EAAA7F;
+    
+    @include mq(medium) {
+      opacity: 1;
+    }
+  }
+  
+  @include e(icon) {
+    fill:#F4C6A6;
+  }
+}

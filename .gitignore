@@ -1,0 +1,6 @@
+# Keep .gitkeep files in folders
+!.gitkeep
+.build
+.sass-cache
+*.DS_Store
+*.pyc
