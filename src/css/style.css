@@ -261,6 +261,9 @@ footer {
 .menu {
   width: 24px;
   fill: #39ADD1; }
+  .menu__icon:hover {
+    fill: #111;
+    transition: .3s ease-out; }
 
 .logo {
   width: 120px; }
@@ -268,7 +271,11 @@ footer {
     fill: #BA8058; }
   .logo__text {
     opacity: 0;
-    fill: #EAAA7F; }
+    fill: #EAAA7F;
+    transform-origin: 50% 50%; }
+    .logo__text:hover {
+      transform: rotate(360deg);
+      transition: transform .4s ease-out; }
     @media (min-width: 421px) {
       .logo__text {
         opacity: 1; } }

@@ -1,19 +1,25 @@
 .logo {
   width: 120px;
-  
+
   @include e(background) {
     fill:#BA8058;
   }
-  
+
   @include e(text) {
     opacity: 0;
     fill:#EAAA7F;
-    
+    transform-origin: 50% 50%;
+
+    &:hover {
+      transform: rotate(360deg);
+      transition: transform .4s ease-out;
+    }
+
     @include mq(medium) {
       opacity: 1;
     }
   }
-  
+
   @include e(icon) {
     fill:#F4C6A6;
   }
