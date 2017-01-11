@@ -275,4 +275,14 @@ footer {
   .logo__icon {
     fill: #F4C6A6; }
 
+.name {
+  max-width: 100%;
+  border: 3px solid #F4C6A6;
+  padding: 10px;
+  margin: 40px 10px;
+  border-radius: 4px; }
+  @media (min-width: 421px) {
+    .name {
+      display: none; } }
+
 /*# sourceMappingURL=style.css.map */
