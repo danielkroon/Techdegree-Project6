@@ -1,0 +1,10 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    @include mq(medium) {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

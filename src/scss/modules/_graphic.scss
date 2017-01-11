@@ -2,3 +2,103 @@
     margin: 1em auto;
     width: 170px;
 }
+
+// Red // 
+
+.red {
+    
+    .st0 {  
+        fill:#BA8058;
+    }
+    
+    .st1 { 
+         fill:#FBFEFF;
+     }
+    
+    .st2 {
+        fill:#2D3339;
+    }
+    
+    .st3 {
+        fill:#EAAA7F;
+    }
+    
+    &:hover {
+        @extend %scale;
+    }
+}
+
+// Fawn // 
+
+.fawn {
+    
+    .st0 {  
+        fill:#EAAA7F;
+    }
+    
+    .st1 { 
+         fill:#FBFEFF;
+     }
+    
+    .st2 {
+        fill:#2D3339;
+    }
+    
+    .st3 {
+        fill:#F4C6A6;
+    }
+    
+    &:hover {
+        @extend %scale;
+    }
+}
+
+// Sable // 
+
+.sable {
+    
+    .st0 {  
+        fill:#844B24;
+    }
+    
+    .st1 { 
+         fill:#FBFEFF;
+     }
+    
+    .st2 {
+        fill:#2D3339;
+    }
+    
+    .st3 {
+        fill:#BA8058;
+    }
+    
+    &:hover {
+        @extend %scale;
+    }
+}
+
+// Black // 
+
+.black {
+    
+    .st0 {  
+        fill:#BA8058;
+    }
+    
+    .st1 { 
+         fill:#52595F;
+     }
+    
+    .st2 {
+        fill:#FBFEFF;
+    }
+    
+    .st3 {
+        fill:#2D3339;
+    }
+    
+    &:hover {
+        @extend %scale;
+    }
+}
