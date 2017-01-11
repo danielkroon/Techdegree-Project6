@@ -1,4 +1,11 @@
 .menu {
-    width: 24px;
-    fill:#39ADD1;
+  width: 24px;
+  fill:#39ADD1;
+
+  @include e(icon) {
+    &:hover {
+        fill: #111;
+        transition: .3s ease-out;
+    }
+  }
 }
