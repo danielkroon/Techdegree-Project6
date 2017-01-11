@@ -266,16 +266,17 @@ footer {
     transition: .3s ease-out; }
 
 .logo {
-  width: 120px; }
+  width: 120px;
+  height: 140px; }
+  .logo:hover > .logo__text {
+    transform: rotate(360deg);
+    transition: transform .4s ease-out; }
   .logo__background {
     fill: #BA8058; }
   .logo__text {
     opacity: 0;
     fill: #EAAA7F;
-    transform-origin: 50% 50%; }
-    .logo__text:hover {
-      transform: rotate(360deg);
-      transition: transform .4s ease-out; }
+    transform-origin: center 70px; }
     @media (min-width: 421px) {
       .logo__text {
         opacity: 1; } }
@@ -287,7 +288,8 @@ footer {
   border: 3px solid #F4C6A6;
   padding: 10px;
   margin: 40px 10px;
-  border-radius: 4px; }
+  border-radius: 4px;
+  display: block; }
   @media (min-width: 421px) {
     .name {
       display: none; } }
