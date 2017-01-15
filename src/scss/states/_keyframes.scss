@@ -1,0 +1,86 @@
+/*	Navigation 
+------------------------------------------ */
+
+@keyframes grow {
+    0% {
+        transform: scale(0);
+    }
+    30% {
+        transform: scale(1.1);
+    }
+    60% {
+        transform: scale(0.9);
+    }
+}
+
+/*	Logo 
+------------------------------------------ */
+@keyframes turn {
+    0% {
+        transform: rotate(0) scale(0);
+        opacity: 0;
+    }
+    60% {
+        transform: rotate(375deg) scale(1.1);
+    }
+    80% {
+        transform: rotate(355deg) scale(0.9);
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+@keyframes pulse {
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/*	Dogs 
+------------------------------------------ */
+
+@keyframes nose {
+    25% {
+        transform: translate3d(0, -5px, 0);
+    }
+    50% {
+        transform: translate3d(0, 1px, 0);
+    }
+    75% {
+        transform: translate3d(0, -5px, 0);
+    }
+    100% {
+        transform: translate3d(0, 1px, 0);
+    }
+}
+
+@keyframes ear1 {
+    0% {
+        transform: rotate3d(1, 1, 0, 30deg);
+    }
+    50% {
+        transform: rotate3d(1, 1, 0, 0deg);
+    }
+    75% {
+        transform: rotate3d(1, 1, 0, 30deg);
+    }
+    100% {
+        transform: rotate3d(1, 1, 0, 0deg);
+    }
+}
+
+@keyframes ear2 {
+    0% {
+        transform: rotate3d(1, 0, 0, -20deg);
+    }
+    50% {
+        transform: rotate3d(1, 0, 0, 0deg);
+    }
+    75% {
+        transform: rotate3d(1, 0, 0, -20deg);
+    }
+    100% {
+        transform: rotate3d(1, 0, 0, 0deg);
+    }
+}

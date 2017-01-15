@@ -1,5 +1,6 @@
 .menu {
   width: 24px;
+  height: 26px;
   fill:#39ADD1;
 }
 
@@ -16,6 +17,11 @@
     
     .menu {
       fill: #FFFFFF;
+      
+      @include e(icon) {
+        transform-origin: 50% 50%; 
+        animation: grow 1s ease-out backwards;
+      }
     }
   }
 }

@@ -6,5 +6,6 @@
     @include mq(medium) {
         flex-direction: row;
         justify-content: space-around;
+        height: 70px;
     }
 }
