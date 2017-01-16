@@ -327,7 +327,8 @@ footer {
     border-radius: 3px;
     color: #FFFFFF; }
     .link:hover .menu {
-      fill: #FFFFFF; }
+      fill: #FFFFFF;
+      overflow: visible; }
       .link:hover .menu__icon {
         transform-origin: 50% 50%;
         animation: grow 1s ease-out backwards; }
