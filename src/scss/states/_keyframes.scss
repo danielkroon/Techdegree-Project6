@@ -13,7 +13,7 @@
         transform: scale(1.1);
     }
     60% {
-        transform: scale(0.9);
+        transform: scale(.9);
     }
 }
 
@@ -28,7 +28,7 @@
         transform: rotate(375deg) scale(1.1);
     }
     80% {
-        transform: rotate(355deg) scale(0.9);
+        transform: rotate(355deg) scale(.9);
     }
     100% {
         transform: rotate(360deg) scale(1);
@@ -87,4 +87,34 @@
     100% {
         transform: rotate3d(1, 0, 0, 0deg);
     }
+}
+
+@keyframes offset {
+  100% {
+    stroke-dashoffset: 0;
+  }  
+}
+
+@keyframes fill-it-red {
+  100% {
+    fill: #ba8058;
+  }
+}
+
+@keyframes fill-it-fawn {
+  100% {
+    fill: #eaaa7f;
+  }
+}
+
+@keyframes fill-it-sable {
+  100% {
+    fill: #844b24;
+  }
+}
+
+@keyframes fill-it-black {
+  100% {
+    fill: #ba8058;
+  }
 }

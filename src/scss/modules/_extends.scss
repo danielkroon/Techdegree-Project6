@@ -1,7 +1,9 @@
 // ==========================================================================
-// Utilities
+// Extends
 // ==========================================================================
-@import 'config';
-@import 'functions';
-@import 'helpers';
-@import 'mixins';
+
+%line-drawing {
+    stroke-width: 2;
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+}

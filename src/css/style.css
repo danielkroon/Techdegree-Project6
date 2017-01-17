@@ -197,7 +197,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-weight: 300;
   color: #111;
   background: url("../img/svg/background.svg") #edeff0;
@@ -276,58 +276,73 @@ footer {
     transform-origin: bottom center;
     animation: ear2 1.1s ease-in-out backwards; }
 
+.transparent {
+  fill: transparent; }
+
 .red .st0 {
-  fill: #BA8058; }
+  fill: #ba8058; }
 .red .st1 {
-  fill: #FBFEFF; }
+  fill: #fbfeff; }
 .red .st2 {
-  fill: #2D3339; }
+  fill: #2d3339; }
 .red .st3 {
-  fill: #EAAA7F; }
+  fill: #eaaa7f; }
+.red .red-body {
+  stroke: #ba8058;
+  animation: offset 5s linear forwards, fill-it-red .8s 5s forwards; }
 
 .fawn .st0 {
-  fill: #EAAA7F; }
+  fill: #eaaa7f; }
 .fawn .st1 {
-  fill: #FBFEFF; }
+  fill: #fbfeff; }
 .fawn .st2 {
-  fill: #2D3339; }
+  fill: #2d3339; }
 .fawn .st3 {
-  fill: #F4C6A6; }
+  fill: #f4c6a6; }
+.fawn .fawn-body {
+  stroke: #eaaa7f;
+  animation: offset 5s linear forwards, fill-it-fawn .8s 5s forwards; }
 
 .sable .st0 {
-  fill: #844B24; }
+  fill: #844b24; }
 .sable .st1 {
-  fill: #FBFEFF; }
+  fill: #fbfeff; }
 .sable .st2 {
-  fill: #2D3339; }
+  fill: #2d3339; }
 .sable .st3 {
-  fill: #BA8058; }
+  fill: #ba8058; }
+.sable .sable-body {
+  stroke: #844b24;
+  animation: offset 5s linear forwards, fill-it-sable .8s 5s forwards; }
 
 .black .st0 {
-  fill: #BA8058; }
+  fill: #ba8058; }
 .black .st1 {
-  fill: #52595F; }
+  fill: #52595f; }
 .black .st2 {
-  fill: #FBFEFF; }
+  fill: #fbfeff; }
 .black .st3 {
-  fill: #2D3339; }
+  fill: #2d3339; }
+.black .black-body {
+  stroke: #ba8058;
+  animation: offset 5s linear forwards, fill-it-black .8s 5s forwards; }
 
 .menu {
   width: 24px;
   height: 26px;
-  fill: #39ADD1; }
+  fill: #39add1; }
 
 .link {
   display: block;
   transition: .3s ease-out;
-  margin: 20px 0px; }
+  margin: 20px 0; }
   .link:hover {
     padding: 10px 20px;
     background-color: #39add1;
     border-radius: 3px;
-    color: #FFFFFF; }
+    color: #fff; }
     .link:hover .menu {
-      fill: #FFFFFF;
+      fill: #fff;
       overflow: visible; }
       .link:hover .menu__icon {
         transform-origin: 50% 50%;
@@ -340,17 +355,17 @@ footer {
     transform: rotate(360deg);
     transition: transform .4s ease-in-out; }
   .logo__background {
-    fill: #BA8058; }
+    fill: #ba8058; }
   .logo__text {
     opacity: 0;
-    fill: #EAAA7F;
+    fill: #eaaa7f;
     transform-origin: center 70px; }
     @media (min-width: 421px) {
       .logo__text {
         opacity: 1; } }
   .logo__icon {
     transform-origin: 50% 50%;
-    fill: #F4C6A6;
+    fill: #f4c6a6;
     animation: turn 1.1s .2s ease-out backwards; }
     .logo__icon path {
       animation: pulse .7s 1.5s; }
@@ -365,7 +380,7 @@ footer {
 
 .name {
   max-width: 100%;
-  border: 3px solid #F4C6A6;
+  border: 3px solid #f4c6a6;
   padding: 10px;
   margin: 40px 10px;
   border-radius: 4px;
@@ -373,6 +388,11 @@ footer {
   @media (min-width: 421px) {
     .name {
       display: none; } }
+
+.red .red-body, .fawn .fawn-body, .sable .sable-body, .black .black-body {
+  stroke-width: 2;
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400; }
 
 /*	Navigation 
 ------------------------------------------ */
@@ -427,5 +447,20 @@ footer {
     transform: rotate3d(1, 0, 0, -20deg); }
   100% {
     transform: rotate3d(1, 0, 0, 0deg); } }
+@keyframes offset {
+  100% {
+    stroke-dashoffset: 0; } }
+@keyframes fill-it-red {
+  100% {
+    fill: #ba8058; } }
+@keyframes fill-it-fawn {
+  100% {
+    fill: #eaaa7f; } }
+@keyframes fill-it-sable {
+  100% {
+    fill: #844b24; } }
+@keyframes fill-it-black {
+  100% {
+    fill: #ba8058; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -7,15 +7,15 @@
     width: 170px;
     transform-origin: 50% 50%;
         
-    &:hover { 
-        .nose { 
+    &:hover {
+        .nose {
             animation: nose .9s ease-in-out backwards;
         }
-        
+
         .ear1 {
             animation: ear1 1.1s ease-in-out backwards;
         }
-        
+
         .ear2 {
             transform-origin: bottom center;
             animation: ear2 1.1s ease-in-out backwards;
@@ -23,86 +23,113 @@
     }
 }
 
+.transparent {
+    fill: transparent;
+}
+
 // Red // 
 
 .red {
     
-    .st0 {  
-        fill:#BA8058;
+    .st0 {
+        fill: #ba8058;
     }
-    
-    .st1 { 
-         fill:#FBFEFF;
-     }
-    
+
+    .st1 {
+        fill: #fbfeff;
+    }
+
     .st2 {
-        fill:#2D3339;
+        fill: #2d3339;
+    }
+
+    .st3 {
+        fill: #eaaa7f;
     }
     
-    .st3 {
-        fill:#EAAA7F;
-    }
+    .red-body {
+        @extend %line-drawing;
+        stroke: #ba8058;
+        animation: offset 5s linear forwards, fill-it-red .8s 5s forwards;
+    }    
 }
 
 // Fawn // 
 
 .fawn {
     
-    .st0 {  
-        fill:#EAAA7F;
+    .st0 {
+        fill: #eaaa7f;
     }
-    
-    .st1 { 
-         fill:#FBFEFF;
-     }
-    
+
+    .st1 {
+        fill: #fbfeff;
+    }
+
     .st2 {
-        fill:#2D3339;
+        fill: #2d3339;
+    }
+
+    .st3 {
+        fill: #f4c6a6;
     }
     
-    .st3 {
-        fill:#F4C6A6;
-    }
+    .fawn-body {
+        @extend %line-drawing;
+        stroke: #eaaa7f;
+        animation: offset 5s linear forwards, fill-it-fawn .8s 5s forwards;
+    }    
 }
 
 // Sable // 
 
 .sable {
     
-    .st0 {  
-        fill:#844B24;
+    .st0 {
+        fill: #844b24;
     }
-    
-    .st1 { 
-         fill:#FBFEFF;
-     }
-    
+
+    .st1 {
+        fill: #fbfeff;
+    }
+
     .st2 {
-        fill:#2D3339;
+        fill: #2d3339;
+    }
+
+    .st3 {
+        fill: #ba8058;
     }
     
-    .st3 {
-        fill:#BA8058;
-    }
+    .sable-body {
+        @extend %line-drawing;
+        stroke: #844b24;
+        animation: offset 5s linear forwards, fill-it-sable .8s 5s forwards;
+    }    
 }
 
 // Black // 
 
 .black {
     
-    .st0 {  
-        fill:#BA8058;
+    .st0 {
+        fill: #ba8058;
     }
-    
-    .st1 { 
-         fill:#52595F;
-     }
-    
+
+    .st1 {
+        fill: #52595f;
+    }
+
     .st2 {
-        fill:#FBFEFF;
+        fill: #fbfeff;
     }
-    
+
     .st3 {
-        fill:#2D3339;
+        fill: #2d3339;
     }
+    .black-body {
+        @extend %line-drawing;
+        stroke: #ba8058;
+        animation: offset 5s linear forwards, fill-it-black .8s 5s forwards;
+    }   
 }
