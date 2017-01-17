@@ -390,9 +390,9 @@ footer {
       display: none; } }
 
 .red .red-body, .fawn .fawn-body, .sable .sable-body, .black .black-body {
-  stroke-width: 2;
-  stroke-dasharray: 400;
-  stroke-dashoffset: 400; }
+  stroke-width: 2px;
+  stroke-dasharray: 400px;
+  stroke-dashoffset: 400px; }
 
 /*	Navigation 
 ------------------------------------------ */
