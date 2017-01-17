@@ -26,9 +26,9 @@
 .transparent {
     fill: transparent;
     
-    @include if-ie {
-        fill: pink;
-    }
+    // @include if-ie {
+    //     fill: #FFC0CB;
+    // }
 }
 
 // Red // 

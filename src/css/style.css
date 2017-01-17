@@ -278,12 +278,6 @@ footer {
 
 .transparent {
   fill: transparent; }
-  @media screen and (min-width: 0\0) {
-    .transparent {
-      fill: pink; } }
-  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    .transparent {
-      fill: pink; } }
 
 .red .st0 {
   fill: #ba8058; }
