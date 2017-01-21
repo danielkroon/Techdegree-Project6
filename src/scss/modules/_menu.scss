@@ -3,15 +3,14 @@
 // ==========================================================================
 
 .menu {
-    width: 24px;
-    height: 26px;
+    width: 15px;
     fill: #39add1;
 }
 
 .link {
     display: block;
     transition: .3s ease-out;
-    margin: 20px 0;
+    margin: 20px 20px;
 
     &:hover {
         padding: 10px 20px;

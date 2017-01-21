@@ -3,8 +3,9 @@
 // ==========================================================================
 
 .logo {
-    width: 120px;
-    height: 140px;
+    max-width: 140px;
+    overflow: visible;
+    margin: 0 0 20px 0;
 
     &:hover > .logo__text {
         transform: rotate(360deg);
