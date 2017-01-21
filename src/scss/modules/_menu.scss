@@ -29,3 +29,11 @@
         }
     }
 }
+
+// IF IE - navigation fix
+.no-flexboxlegacy {
+  
+    .menu {
+      height: 15px;
+  }
+}

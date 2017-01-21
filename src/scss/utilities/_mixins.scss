@@ -35,14 +35,3 @@
       @error "Whoops! No Value could be retrieved for '#{$break}'.";
     }
 }
-
-// // target IE9-IE11
-// 
-// @mixin if-ie {
-//     @media screen and (min-width:0\0) {
-//         @content;
-//     }
-//     @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-//         @content;
-//     }
-// }

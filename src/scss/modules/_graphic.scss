@@ -25,10 +25,14 @@
 
 .transparent {
     fill: transparent;
+}
+
+// IF IE - fix for Smil animation
+.no-smil {
     
-    // @include if-ie {
-    //     fill: #FFC0CB;
-    // }
+    .transparent {
+        fill: #FFC0CB;
+    }
 }
 
 // Red // 

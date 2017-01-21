@@ -99,6 +99,9 @@ footer {
 .transparent {
   fill: transparent; }
 
+.no-smil .transparent {
+  fill: #FFC0CB; }
+
 .red .st0 {
   fill: #ba8058; }
 .red .st1 {
@@ -167,10 +170,12 @@ footer {
         transform-origin: 50% 50%;
         animation: grow 1s ease-out backwards; }
 
+.no-flexboxlegacy .menu {
+  height: 15px; }
+
 .logo {
   max-width: 140px;
-  overflow: visible;
-  margin: 0 0 20px 0; }
+  overflow: visible; }
   .logo:hover > .logo__text {
     transform: rotate(360deg);
     transition: transform .4s ease-in-out; }
